@@ -1,0 +1,137 @@
+
+:root{
+    font-size: 18px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(0, 11%, 12%);
+}
+
+section{
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card{
+    background: white;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-body{
+    padding: 0px 20px 25px;
+}
+
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+}
+
+.img-holder{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    margin: -60px auto 25px auto;
+}
+
+.img-holder img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.age, .city, .meta{
+     color: hsl(0, 11%, 12%);
+    opacity: .5;
+}
+
+.name-age{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.age{
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.city{
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.card-footer{
+    border-top: 1px solid hsl(0, 4%, 84%);
+    display: flex;
+    padding: 0px 25px;
+}
+
+.card-footer .item{
+    flex: 1;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .item .value{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.card-footer .item .meta{
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+/* circle graphics */
+
+.circles .c1, .circles .c2{
+    position: absolute;
+}
+
+.circles .c1{
+    top: -525px;
+    left: -235px;
+}
+.circles .c2{
+    right: -230px;
+    bottom: -620px;
+}
+
+@media (max-width: 800px) {
+    .circles .c1{
+        top: -600px;
+        left: -530px;
+    }
+    .circles .c2{
+        right: -500px;
+        bottom: -620px;
+    }
+    
+}
+
+.attribution{
+    text-align: center;
+    font-size: 10px;
+}
